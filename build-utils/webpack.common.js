@@ -1,4 +1,4 @@
-const commonPaths = require("./common-paths")
+const commonPaths = require("./common-paths");
 
 const config = {
   entry: "./src/index.js",
