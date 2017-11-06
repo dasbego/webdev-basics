@@ -5,6 +5,13 @@ const config = {
   output: {
     filename: "bundle.js",
     path: commonPaths.outputPath
+  },
+  module: {
+    loaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader'
+    }]
   }
 }
 

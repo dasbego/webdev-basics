@@ -1,1 +1,6 @@
-console.log("Primera configuración de webpack");
+const greet = (name) => {
+  return `Hola ${name}!`;
+}
+
+const greeting = greet("Bego");
+console.log(greeting);
