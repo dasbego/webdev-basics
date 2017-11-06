@@ -8,14 +8,16 @@
   "scripts": {
     "build:dev": "webpack --env.env=dev",
     "watch:dev": "yarn build --watch",
-    "build:dev:log": "yarn build --env.env='dev'"
+    "build:analyze": "yarn build:dev --env.addons=bundleanalyzer"
   },
   "dependencies": {
     "webpack": "^3.8.1"
   },
   "devDependencies": {
+    "eslint": "^4.10.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
+    "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.4",
     "webpack-merge": "^4.1.1"
   }

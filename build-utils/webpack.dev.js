@@ -1,7 +1,5 @@
 const commonPaths = require("./common-paths");
 
-const config = {
+module.exports = {
   devtool: "source-map"
 }
-
-module.exports = config;
