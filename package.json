@@ -8,7 +8,9 @@
   "scripts": {
     "build:dev": "webpack --env.env=dev",
     "watch:dev": "yarn build --watch",
-    "build:analyze": "yarn build:dev --env.addons=bundleanalyzer"
+    "build:analyze": "yarn build:dev --env.addons=bundleanalyzer",
+    "build:prod": "webpack --env.env=prod",
+    "watch:prod": "yarn build --watch"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
