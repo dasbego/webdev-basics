@@ -9,11 +9,12 @@
     "build": "webpack --env.env=dev",
     "dev": "webpack-dev-server --env.env=dev --port=9000",
     "watch:dev": "yarn build --watch",
-    "build:analyze": "yarn build:dev --env.addons=bundleanalyzer",
-    "build:prod": "webpack-dev-server --port=9000 --env.env=prod"
+    "build:analyze": "yarn build --env.addons=bundleanalyzer",
+    "build:prod": "webpack --env.env=prod"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.4",
     "style-loader": "^0.19.0",
     "webpack": "^3.8.1"
   },

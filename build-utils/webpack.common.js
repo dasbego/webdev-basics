@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const config = {
   entry: "./src/index.js",
   output: {
-    filename: "[chunkhash].bundle.js",
+    filename: "bundle.js",
     path: commonPaths.outputPath
   },
   plugins: [
